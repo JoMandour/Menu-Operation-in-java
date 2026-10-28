@@ -1,5 +1,8 @@
 ## Getting Started
 
+This operation menu in java covers 9 array operations which is useful learning material
+ENJOY
+
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
 ## Folder Structure
