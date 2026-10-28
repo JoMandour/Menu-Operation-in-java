@@ -33,7 +33,7 @@ public class Main {
 
             switch (choice) {
                 case 1: ops.append(readInt("Enter a value: ")); break;
-                case 2: IO.println("traverse called"); break;
+                case 2: ops.traverse(); break;
                 case 3: IO.println("access called"); break;
                 case 4: IO.println("search called"); break;
                 case 5: IO.println("insert called"); break;
@@ -50,6 +50,7 @@ public class Main {
     public class ArrayOperations {
     private int[] arr;
     private int size = 0;
+    
 
     public ArrayOperations(int capacity) {
         arr = new int[capacity];
@@ -67,5 +68,17 @@ public class Main {
         arr[size] = value;
         size++;
     }
+
+    public void traverse() {
+    if (size == 0) {
+        IO.println("Array is empty.");
+        return;
+    }
+    for (int i = 0; i < size; i++) {
+        IO.println("[" + i + "] = " + arr[i]);
+    }
+}
+
   }
+
 }
